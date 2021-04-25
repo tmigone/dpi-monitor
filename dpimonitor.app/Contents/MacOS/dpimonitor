@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "["$(date)"] click: $1" >> /Users/tomi/Documents/git/tmigone/dpi-monitor/debug.txt
+curl http://localhost:${DPI_SERVER_PORT:-7777}/$1
